@@ -24,7 +24,7 @@ In the final equality here we replace the test statistic with the sample mean ca
 
 In the conditional probability on the left-hand side of the final equality of the expression above we have asserted that we are calculating this conditional probability given that the true expectation ![](https://render.githubusercontent.com/render/math?math=\mu_D) for the distribution is equal to the value of the sample mean that we used as the statistic when performing the hypothesis test.  The ![](https://render.githubusercontent.com/render/math?math=X_i) values that we are using in the calculation of T are a new set of samples this distribution.  We can thus continue the derivation above as follows:
 
-![](https://render.githubusercontent.com/render/math?math=B(\mu)=P(T\le\l|\mu_D=\mu)=P\left[\frac{\frac{1}{n}\sum_{i=1}^{n}X_i-\mu}{\sigma/\sqrt{n}}\le\frac{\mu_0}{\sigma/\sqrt{n}}+\Phi^{-1}(0.05)-\frac{mu}{\sigma/\sqrt{n}}\right])
+![](https://render.githubusercontent.com/render/math?math=B(\mu)=P(T\le\l|\mu_D=\mu)=P\left[\frac{\frac{1}{n}\sum_{i=1}^{n}X_i-\mu}{\sigma/\sqrt{n}}\le\frac{\mu_0}{\sigma/\sqrt{n}}+\Phi^{-1}(0.05)-\frac{\mu}{\sigma/\sqrt{n}}\right])
 
 The central limit theorem tells us that the quantity on the right-hand side of the inequality in the probability above is a sample from a standard normal random variable.  We can thus write the following as our final expression for the statistical power of the test:
 
