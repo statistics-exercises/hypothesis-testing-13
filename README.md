@@ -18,17 +18,17 @@ To understand this better let's consider how we might determine this quantity fo
 
 Lets now assume that the value of ![](https://render.githubusercontent.com/render/math?math=\mu_D) that we obtained is the true expectation of the normal distribution that was sampled.  In addition, let's assume that the standard deviation for the sampled distribution is two as was assumed under the null hypothesis in the first task.  If you remember from that task the null and alternative hypotheses in the first task were that the sampled distribution had expectation twenty and variance four and that the expectation was less than 20 respectively.  From this information, you could thus calculate the upper bound for the __critical region__, which we will call l.  Given the definition above the __statistical power__ is thus:
 
-![](https://render.githubusercontent.com/render/math?math=B(\mu)=P(T\le\l|\mu_D=\mu)=P\left[\frac{1}{n}\sum_{i=1}^{n}X_i\le\mu_0+\frac{\sigma}{\sqrt{n}}\Phi^{-1}(0.05)\right])
+![](https://render.githubusercontent.com/render/math?math=B(\mu)=P(T\le\l|\mu_D=\mu)=P\left[\frac{1}{n}\sum_{i=1}^{n}X_i\le\mu_0%2B\frac{\sigma}{\sqrt{n}}\Phi^{-1}(0.05)\right])
 
 In the final equality here we replace the test statistic with the sample mean calculated from n random variables.  The lower bound is then replaced by a formula that can be used to calculate this quantity.  In this expression, ![](https://render.githubusercontent.com/render/math?math=\mu_0) is the expectation that is assumed under the null hypothesis (in this case ![](https://render.githubusercontent.com/render/math?math=\mu_0=20)), ![](https://render.githubusercontent.com/render/math?math=\Phi^{-1}) is the inverse of the cumulative probability distribution function for the standard normal distribution.  
 
 In the conditional probability on the left-hand side of the final equality of the expression above we have asserted that we are calculating this conditional probability given that the true expectation ![](https://render.githubusercontent.com/render/math?math=\mu_D) for the distribution is equal to the value of the sample mean that we used as the statistic when performing the hypothesis test.  The ![](https://render.githubusercontent.com/render/math?math=X_i) values that we are using in the calculation of T are a new set of samples this distribution.  We can thus continue the derivation above as follows:
 
-![](https://render.githubusercontent.com/render/math?math=B(\mu)=P(T\le\l|\mu_D=\mu)=P\left[\frac{\frac{1}{n}\sum_{i=1}^{n}X_i-\mu}{\sigma/\sqrt{n}}\le\frac{\mu_0}{\sigma/\sqrt{n}}+\Phi^{-1}(0.05)-\frac{\mu}{\sigma/\sqrt{n}}\right])
+![](https://render.githubusercontent.com/render/math?math=B(\mu)=P(T\le\l|\mu_D=\mu)=P\left[\frac{\frac{1}{n}\sum_{i=1}^{n}X_i-\mu}{\sigma/\sqrt{n}}\le\frac{\mu_0}{\sigma/\sqrt{n}}%2B\Phi^{-1}(0.05)-\frac{\mu}{\sigma/\sqrt{n}}\right])
 
 The central limit theorem tells us that the quantity on the right-hand side of the inequality in the probability above is a sample from a standard normal random variable.  We can thus write the following as our final expression for the statistical power of the test:
 
-![](https://render.githubusercontent.com/render/math?math=B(\mu)=P(T\le\l|\mu_D=\mu)=\Phi\left[\frac{\mu_0}{\sigma/\sqrt{n}}+\Phi^{-1}(0.05)-\frac{\mu}{\sigma/\sqrt{n}}\right])
+![](https://render.githubusercontent.com/render/math?math=B(\mu)=P(T\le\l|\mu_D=\mu)=\Phi\left[\frac{\mu_0}{\sigma/\sqrt{n}}%2B\Phi^{-1}(0.05)-\frac{\mu}{\sigma/\sqrt{n}}\right])
 
 where ![](https://render.githubusercontent.com/render/math?math=\Phi) is the cumulative probability distribution function for the standard normal random variable.
 
